@@ -1,0 +1,285 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Variables */
+
+:root {
+    --bkg-dark: #212327;
+    --bkg-white: #DCDDDE;
+    --green1: #32EC5B;
+    --green2: #0EB132;
+    --grey: #17191C;
+    --grey-text: #B6B2B2;
+    font-size: 62.5%;
+    font-family: 'Raleway',Arial, sans-serif;
+}
+
+
+/* Background */
+
+body {
+    background-color: var(--bkg-dark);
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+/* Menu */
+nav {
+    display: flex;
+    width: 100%;
+    height: 8.6rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul  {
+    display: flex;
+    gap: 3.8rem;
+    
+    margin-right: 4rem;
+    
+}
+
+nav ul a {
+    font-size: 2rem;
+    color: var(--bkg-white);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav svg {
+    margin-left: 0.5rem;
+    width: 70px;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 48rem;
+    gap: 1rem;
+
+    justify-content: center;
+    align-items: left;
+    margin-left: 10.6rem;
+    
+    
+}
+
+header p {
+    font-weight: bold;
+    color: var(--grey-text);
+    font-size: 2rem;
+    margin-left: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+header [id$=-bt] {
+    
+    text-decoration: none;
+    font-size: 2.4rem;
+    color: #DCDDDE;
+    border-radius: 10rem;
+    padding: 10px 19px 10px 19px;
+    
+    font-weight: bold;
+    
+    
+}
+
+header a {
+    display: flex;
+    
+    align-items: center;
+    
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+#botadd-bt {
+    background-image: linear-gradient(
+        60deg,
+        var(--green1),
+        var(--green2)
+    );
+    
+}
+
+#svs-bt {
+    border: solid 3px var(--bkg-white);
+}
+
+/* Main */
+
+main {
+    
+    width: 100%;
+    height: 71rem;
+    position: relative;
+    display: inline-block;
+}
+
+main section {
+    position: absolute;
+    top: 17rem;
+    left: 10rem;
+    font-size: 2.8rem;
+    color: var(--grey-text);
+    font-weight: bold;
+    
+}
+
+main section h2 {
+    background: linear-gradient(to right, var(--bkg-white), var(--grey-text));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 30.5rem;
+}
