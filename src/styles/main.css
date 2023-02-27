@@ -322,6 +322,11 @@ header {
     margin-bottom: 1rem;
 }
 
+.head-contents svg {
+    width: 40rem;
+    height: 10rem;
+    
+}
 
 
 .head-contents div a {
