@@ -250,7 +250,7 @@ body {
     justify-content: space-between;
 }
 
-.menu ul  {
+.menu-horizontal  {
     display: flex;
     gap: 3.8rem;
     
@@ -258,14 +258,14 @@ body {
     
 }
 
-.menu ul a {
+.menu-horizontal a {
     font-size: 2rem;
     color: var(--bkg-white);
     font-weight: bold;
     text-decoration: none;
 }
 
-.menu ul a:hover {
+.menu-horizontal a:hover {
     color: var(--green1);
 }
 
@@ -385,14 +385,15 @@ header {
 
 .main-area {
     width: 100%;
-    height: 65rem;
-    margin-top: 15rem;
+    height: 100vh;
+    
+    margin-top: 15vh
 }
 
-main-contents {
+.main-contents {
     left: 0;
     width: 100%;
-    height: 70rem;
+    height: 100%;
     position: absolute;
     display: flex;
 }
@@ -404,19 +405,22 @@ main-contents {
     width: 100%;
 }
 
+
+
 .content-m {
 
-    position: absolute;
     width: 100%;
     height: 65rem;
-    box-sizing: border-box;
+    
+    
     
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 10rem;
     grid-row-gap: 0px;
+    justify-items: center;
     
     align-items: center;
     
@@ -429,8 +433,8 @@ main-contents {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    margin: 0 10rem;
+    
+    width: 35vw;
 
     font-size: 2.8rem;
     color: var(--grey-text);
@@ -453,39 +457,31 @@ main-contents {
 }
 
 .images {
-    width: 51rem;
-    height: 100%;
-    position: relative;
+    
+}
+
+.images-tg {
     display: flex;
-    
-    
+    width: 65rem;
+    margin-right: 5rem;
 }
 
-#img-1 {
-    position: absolute;
-    top: 32rem;
-    right: 18rem;
+.images-group {
+    display: none;
 }
 
-#img-2 {
-    position: absolute;
-    top: 16rem;
-    right: 0.1rem;
-}
-
-#img-3 {
-    position: absolute;
-    
-    right: 18rem;
+.images-incolum {
+    display: none;
 }
 
 .bg {
     
     position: absolute;
     left: 0;
+    top: 102rem;
 
     width: 100%;
-    height: 65rem;
+    height: 65vh;
 
     display: flex;
     justify-content: center;
@@ -602,11 +598,12 @@ main-contents {
 }
 
 .foot-contents {
+    width: 100%;
     position: absolute;
     display: flex;
     flex-direction: row;
     text-align: center;
-    gap: 5em;
+    gap: 5vw;
     justify-content: center;
 }
 
