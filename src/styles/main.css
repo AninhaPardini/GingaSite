@@ -547,7 +547,7 @@ header {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 30.67rem;
+    width: 35.67rem;
     height: 20.5rem;
     justify-content: center;
     
@@ -575,7 +575,7 @@ header {
     position: absolute;
     top: 4rem;
     z-index: -1;
-    width: 22.2rem;
+    width: 31rem;
     height: 7px;
     background-color: var(--green4);
     
