@@ -1,7 +1,8 @@
-const showmenu = (show) => {
-  show = document.querySelector('.desktopUI');
+function showNav() {
+  document.getElementById('myNav').style.width = '100%';
+}
 
-  return show;
-};
-
-document.querySelector('.hamburger_lines');
+function closeNav() {
+  document.getElementById('myNav').style.width = '0';
+  /* click = document.querySelector('.hamburger_lines'); */
+}

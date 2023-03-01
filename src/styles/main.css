@@ -250,13 +250,30 @@ body {
     justify-content: space-between;
 }
 
+.ginga-icon {
+    width: 60px;
+}
+
+.menu a {
+    cursor: pointer;
+    transition: opacity .2s ease;
+    display: flex;
+
+    margin-left: 7rem;
+
+}
+
+.menu a:hover {
+    opacity: 80%;
+}
+
 .menu-vertical {
     display: none;
 }
 
 .menu-horizontal  {
     display: flex;
-    gap: 3.8rem;
+    
     
     margin-right: 8rem;
     
@@ -273,17 +290,9 @@ body {
     color: var(--green1);
 }
 
-.ginga-icon {
-    margin-left: 4rem;
-    width: 60px;
-    color: var(--green3);
 
-}
 
-.ginga-icon:hover {
-    color: var(--green4);
-    
-}
+
 
 /* show menu */
 
@@ -326,9 +335,10 @@ header {
     margin-bottom: 1rem;
 }
 
-.head-contents svg {
-    width: 40rem;
-    height: 10rem;
+.head-contents img {
+    width: 50rem;
+    
+    
     
 }
 
