@@ -545,7 +545,7 @@
         color: var(--bkg-white);
     }
 
-    .contactList {
+    .notes_menu {
         margin-top: 30vh !important;
     }
 
@@ -585,17 +585,17 @@
         justify-content: space-between;
     }
 
-    .contactList {
+    .notes_menu {
         width: 70%;
         display: flex;
         align-items: center;
     }
 
-    .contactList li a {
+    .notes_menu li a {
         font-size: 1.5rem;
     }
 
-    .contactList li {
+    .notes_menu li {
         font-size: 1.5rem;
 
         display: flex;
