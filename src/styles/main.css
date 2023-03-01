@@ -314,13 +314,8 @@ header {
     height: 70rem;
     gap: 15rem;
 
-    margin-top: 5rem;
-
     justify-content: center;
     align-items: left;
-    
-    
-    
 }
 
 .head-contents {
@@ -409,9 +404,9 @@ header {
 
 .main-area {
     width: 100%;
-    height: 100vh;
+    height: 90;
     
-    margin-top: 15vh
+    margin-top: 12vh
 }
 
 .main-contents {
@@ -497,7 +492,7 @@ header {
     
     position: absolute;
     left: 0;
-    top: 102rem;
+    top: 95rem;
 
     width: 100%;
     height: 65vh;
@@ -600,11 +595,9 @@ header {
 /* Footer */
 
 .foot-area {
-    position: absolute;
-    left: 0;
 
     width: 100%;
-    height: 25vh;
+    height: 15vh;
     
     background-color: var(--grey);
 
@@ -617,7 +610,7 @@ header {
 }
 
 .foot-contents {
-    width: 100%;
+    width: 90%;
     
     display: flex;
     
@@ -628,7 +621,7 @@ header {
 
 .contents-1 {
     display: flex;
-    gap: 10vw;
+    
 }
 
 .exten-logo {
@@ -695,9 +688,10 @@ header {
 .notes {
     font-size: 1.5rem;
     color: var(--grey2-text);
-    
-    position: absolute;
-    top: 21.4vh;
+    display: flex;
+    align-items: center;
+   /*  position: absolute;
+    top: 12vh; */
 }
 
 .notes a {
