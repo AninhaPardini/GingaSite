@@ -488,7 +488,7 @@
         
 
         margin: 0;
-        margin-top: 30vw;
+        margin-top: 35vw;
 
         display: flex;
         align-items: center;
@@ -497,30 +497,30 @@
     }
     
     .head-contents img {
-        width: 80vw;
+        width: 90vw;
         
     }
 
-    .weffect-tx {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        row-gap: 10px;
-    }
 
     .head-contents div p {
-        
+        font-size: 4vw;
         margin-left: 0;
-        margin-bottom: 0;
+        margin-bottom: 0.8rem;
+        display: flex;
+        justify-content: center;
     }
 
     .buttons {
         display: flex;
         justify-content: center;
         flex-direction: column;
+
         margin-top: 10rem;
         gap: 2vh;
+
+        width: 95%;
         height: 20vh;
+
     }
 
     * 
@@ -608,7 +608,7 @@
         /* cta area */
     
     .cta-area {
-        margin-top: 10rem;
+        margin-top: 7rem;
     
         width: 100%;
         height: 60rem;
@@ -619,12 +619,12 @@
     }
     
     .cta {
-        position: absolute;
+        
         display: flex;
         flex-direction: column;
         text-align: center;
-        width: 40rem;
-        height: 30rem;
+        width: 100%;
+        height: 100%;
         justify-content: center;
     
     }
@@ -651,8 +651,8 @@
     .underline-play {
         display: flex;
     
-        position: absolute;
-        top: 3.5rem;
+        position: relative;
+        top: -0.9rem;
 
         z-index: -1;
 
@@ -664,15 +664,31 @@
     }
     
     .content p {
-        margin: 2rem 1rem;
+        margin: 3rem 2rem;
+        margin-bottom: 5rem;
         font-size: 2rem;
         color: var(--grey-text);
     }
+
+    .content ul {
+        margin: 0 5rem;
+        margin-bottom: 3rem;
+        gap: 3rem;
+    }
+
+    .content ul li {
+        font-size: 1.8rem;
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between
+    }
+
+    
     
     #button-cta {
-        margin-top: 2rem;
+        margin-top: 0;
         justify-content: center;
-    
+        margin-left: 1.2rem;
     }
     
     * [id$=-bt] {
