@@ -250,6 +250,7 @@ body {
     justify-content: space-between;
 }
 
+
 .ginga-icon {
     width: 60px;
 }
@@ -328,13 +329,20 @@ header {
 }
 
 .head-contents div p {
-    font-weight: bold;
-    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    
+    font-size: 2.3rem;
 
     color: var(--grey-text);
     
     margin-left: 1.8rem;
     margin-bottom: 1rem;
+}
+
+.head-contents div p strong {
+    font-weight: 800;
+    
 }
 
 .head-contents img {
@@ -540,6 +548,8 @@ header {
     width: 100%;
     height: 60rem;
     
+    margin-top: 10rem;
+
     display: flex;    
     justify-content: center;
     align-items: center;
@@ -550,7 +560,7 @@ header {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 35.67rem;
+    width: 100%;
     height: 100%;
     justify-content: center;
     
@@ -564,44 +574,54 @@ header {
 
 .content h1 {
     margin-bottom: 1rem;
-    font-size: 2.8rem;
-    font-weight: bold;
-        background: linear-gradient(to right, var(--bkg-white), var(--grey-text));
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-}
 
-.underline-play {
-    display: flex;
-    
-    position: absolute;
-    top: 4rem;
-    z-index: -1;
-    width: 31rem;
-    height: 7px;
-    background-color: var(--green4);
-    
+    padding-bottom: 2px;
+    border-bottom: 6px solid var(--green4);
+
+    font-size: 3rem;
+    font-weight: bold;
+
+    background: linear-gradient(to right, var(--bkg-white), var(--grey-text));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .content p {
-    margin: 4rem 0;
+    margin: 3.3rem 0;
+    
+
     font-size: 2rem;
+
     color: var(--grey-text);
+    font-weight: bold;
 }
 
 .content ul {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+
+    gap: 1rem;
+    
+    width: 50rem;
+    
+    margin-bottom: 4rem;
 }
 
 .content ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+
+    gap: 1.5rem;
+
+    font-size: 1.6rem;
+
     color: var(--grey-text);
+}
+
+.content ul li img {
+    width: 1.8rem;
 }
 
 #button-cta {
@@ -692,6 +712,11 @@ header {
 
 .external {
     width: 15vh;
+}
+
+.social {
+    display: flex;
+    align-items: center;
 }
 
 .social a {

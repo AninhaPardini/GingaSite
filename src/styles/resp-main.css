@@ -213,12 +213,16 @@
         
         .cta {
             position: absolute;
+
             display: flex;
             flex-direction: column;
             text-align: center;
-            width: 40rem;
-            height: 30rem;
             justify-content: center;
+
+            width: 70%;
+            height: 100%;
+
+            
         
         }
     
@@ -230,29 +234,20 @@
         
         .content h1 {
             margin-bottom: 1rem;
+
             font-size: 4rem;
             font-weight: bold;
+
             background: linear-gradient(to right, var(--bkg-white), var(--grey-text));
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         
-        .underline-play {
-            display: flex;
-        
-            position: absolute;
-            top: 7rem;
-            z-index: -1;
-            width: 32rem;
-            height: 7px;
-            background-color: var(--green4);
-        
-        }
-        
         .content p {
             margin: 2rem 0;
-            font-size: 3rem;
+            margin-bottom: 4rem;
+            font-size: 2.3rem;
             color: var(--grey-text);
         }
         
@@ -504,10 +499,15 @@
 
     .head-contents div p {
         font-size: 4vw;
-        margin-left: 0;
+
+        margin: 0 2rem;
         margin-bottom: 0.8rem;
+
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        
+        text-align: center;
+        
     }
 
     .buttons {
@@ -648,20 +648,7 @@
         -webkit-text-fill-color: transparent;
     }
     
-    .underline-play {
-        display: flex;
     
-        position: relative;
-        top: -0.9rem;
-
-        z-index: -1;
-
-        width: 33rem;
-        height: 7px;
-
-        background-color: var(--green4);
-    
-    }
     
     .content p {
         margin: 3rem 2rem;
@@ -671,16 +658,21 @@
     }
 
     .content ul {
+        width: 80%;
+
         margin: 0 5rem;
         margin-bottom: 3rem;
+
         gap: 3rem;
     }
 
     .content ul li {
         font-size: 1.8rem;
-        display: flex;
+        
         gap: 1rem;
-        justify-content: space-between
+
+        display: flex;
+        justify-content: center;
     }
 
     
